@@ -12,6 +12,7 @@ use GeetestLib;
 class LoginController extends Base
 {
 
+	// 用户登录后台 并生成token
 	public function login(Request $request){
 		$res = $request->post();
 		// 字段验证规则
