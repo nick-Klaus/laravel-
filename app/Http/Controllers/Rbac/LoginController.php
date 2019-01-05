@@ -13,6 +13,7 @@ class LoginController extends Base
 {
 
 	// 用户登录后台 并生成token 
+	// zouzou ba
 	public function login(Request $request){
 		$res = $request->post();
 		// 字段验证规则
