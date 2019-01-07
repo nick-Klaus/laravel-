@@ -13,6 +13,7 @@ class LoginController extends Base
 {
 
 	// 用户登录后台 并生成token 这是一个测试
+	// 再次走走嘛
 	// 测试一下下
 	public function login(Request $request){
 		$res = $request->post();
