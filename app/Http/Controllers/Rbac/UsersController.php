@@ -257,6 +257,9 @@ class UsersController extends Base
 
     }
 
+    /*
+    * 导出数据到excel（不带图片）
+    */
     public function export(){
         ini_set('memory_limit','500M');
         set_time_limit(0);//设置超时限制为0分钟
@@ -275,6 +278,9 @@ class UsersController extends Base
         die;
     }
 
+    /*
+    * 导出带图片的数据到excel
+    */
     public function export1(){
         ini_set('memory_limit','500M');
         set_time_limit(0);//设置超时限制为0分钟
