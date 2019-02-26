@@ -27,3 +27,9 @@ Route::get('/', function () {
 //     //     // 处理 /api/users 路由
 //     // })->name('api.users');
 // });
+
+// Route::group( [ 'prefix' => 'Rbac' ] , function () {
+// 	Route::any('user', 'Rbac\UsersController@qrCode');
+// });
+Route::any('index', 'IndexController@index');
+Route::any('qrCode', 'IndexController@qrCode');

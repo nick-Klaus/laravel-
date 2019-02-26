@@ -79,7 +79,10 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    <div class="visible-print text-center">
+                        {!! QrCode::generate('https://www.baidu.com'); !!}
+                        <p>Scan me to return to the original page.</p>
+                    </div>
                 </div>
 
                 <div class="links">

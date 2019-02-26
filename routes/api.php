@@ -42,6 +42,11 @@ Route::group( [ 'prefix' => 'Rbac' ] , function () {
 	Route::get('delRole/{id}', 'Rbac\RolesController@delRole');
 	Route::post('creatRole', 'Rbac\RolesController@creatRole');
 	Route::post('updateRole', 'Rbac\RolesController@updateRole');
+	// 菜单操作
+    Route::post('checkMenus', 'Rbac\MenuController@checkMenus');
+    Route::get('checkTopMenus', 'Rbac\MenuController@checkTopMenus');
+    Route::post('createMenu', 'Rbac\MenuController@createMenu');
+
 	// redis的使用  
 	Route::get('checkRedisList', 'Rbac\RedisController@checkRedisList');
 	Route::get('writeRedisList', 'Rbac\RedisController@writeRedisList');
